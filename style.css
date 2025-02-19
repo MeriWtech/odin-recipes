@@ -1,4 +1,40 @@
-.header {
+#header {
     background-color:rgb(255,170,0);
+    background: linear-gradient(90deg, rgb(255,0,0), rgb(255,0,0) 20%, rgb(255,170,0), rgb(255,170,0));
     color:rgb(255,255,255);
+}
+
+#selection, .choice, body {
+    display: flex;
+}
+
+#selection
+{
+    justify-content: space-between;
+    align-self: center;
+    width: 1300px;
+    height: 300px;
+}
+
+.choice {
+    flex-shrink: 2;
+    align-items: flex-start;
+    text-align: center;
+    border: 1px solid rgb(150,150,150);
+    border-radius: 20px;
+}
+
+.steak {
+    height: 200px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+body {
+    flex-direction: column;
 }
